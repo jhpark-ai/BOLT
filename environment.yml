@@ -1,0 +1,22 @@
+name: bolt
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pytorch>=2.1
+  - torchvision>=0.16
+  - torchaudio>=2.1
+  - pytorch-cuda=12.1
+  - numpy
+  - scipy
+  - pandas
+  - tqdm
+  - pillow
+  - pip
+  - pip:
+    - open_clip_torch
+    - omegaconf
+    - hydra-core

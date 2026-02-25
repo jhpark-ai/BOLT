@@ -1,0 +1,50 @@
+DATASETS: ''
+DATASETS_ALL:
+- DTD
+- GTSRB
+- MNIST
+- SVHN
+- STL10
+- OxfordIIITPet
+- Flowers102
+- CIFAR100
+- PCAM
+- CIFAR10
+- Food101
+- FashionMNIST
+- RenderedSST2
+- EMNIST
+- FGVCAircraft
+- CUB200
+- Country211
+DATASETS_VAL: ''
+
+# Model
+model: ViT-B-32
+model_location: ./models/checkpoints
+data_location: ./datasets
+device: cuda
+
+# Sigma training
+sigma_lr: 1.0e-03
+sigma_wd: 0.0
+sigma_epochs: null
+warmup_ratio: 0.1
+
+# SVD basis
+svd_keep_topk: 12
+initialize_sigma: average
+num_tasks: 17
+
+# Data
+batch_size: 32
+train_k: 0
+seed: 1
+
+# Misc
+num_grad_accumulation: 1
+config_tag: null
+cache_dir: null
+blockwise_coef: true
+world_size: 1
+port: 12355

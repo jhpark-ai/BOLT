@@ -6,7 +6,7 @@
 >
 > Junghwan Park,&ensp;Woojin Cho,&ensp;Junhyuk Heo,&ensp;Darongsae Kwon,&ensp;Kookjin Lee
 >
-> [[Paper (arXiv)]](https://arxiv.org/abs/2512.02441)
+> [Paper](https://openaccess.thecvf.com/content/CVPR2026/papers/Park_Basis-Oriented_Low-rank_Transfer_for_Few-Shot_and_Test-Time_Adaptation_CVPR_2026_paper.pdf)
 
 <p align="center">
   <img src="figures/model_archi.png" width="90%" alt="BOLT pipeline"/>
@@ -130,11 +130,12 @@ models/checkpoints/{model}/{dataset}Val/{config_tag}/{k}shots/encoder.pt
 If you find this work useful, please cite:
 
 ```bibtex
-@article{park2025basis,
+@inproceedings{park2026basis,
   title={Basis-Oriented Low-rank Transfer for Few-Shot and Test-Time Adaptation},
   author={Park, Junghwan and Cho, Woojin and Heo, Junhyuk and Kwon, Darongsae and Lee, Kookjin},
-  journal={arXiv preprint arXiv:2512.02441},
-  year={2025}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={860--870},
+  year={2026}
 }
 ```
 
